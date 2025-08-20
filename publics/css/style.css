@@ -1,0 +1,96 @@
+/*=====================header | footer========================*/
+#header {
+	
+}
+
+#header .logo {
+	background: #019dc6;
+	color: #fff;
+	font-size: 13px;
+	padding: 8px 6px;
+	text-align: center;
+}
+
+#header .menu1 {
+	background: #fff;
+	padding: 6px;
+	border-bottom: 1px solid #a8d9f6;
+}
+
+#header .menu2 {
+	background: #99CCFF;
+	padding: 6px;
+	color: white;
+	font-weight: bold;
+}
+
+#footer {
+	
+}
+
+#footer .copyright {
+	background: #019dc6;
+	color: #fff;
+	font-size: 13px;
+	padding: 8px 6px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*===================== menu ========================*/
+.title_menu {
+	background: #019dc6;
+	padding: 6px;
+	color: #fff;
+	border-left: 4px solid #019dc6;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.title_menu a {
+	color: #FFF;
+}
+
+.submenu {
+	background: #fff;
+	padding: 6px;
+	border-bottom: 1px solid #a8d9f6;
+}
+
+.list {
+	position: relative;
+	border-bottom: 1px solid #e2e2e2;
+	padding: 7px;
+	background-color: #fcfcfc;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+/*================== PHÂN TRANG=======================*/
+.pagination {
+	padding: 2px 3px;
+	background: #fff;
+	text-align: center;
+}
+
+.pagination a {
+	padding: 4px 8px;
+	background: #08A8E8;
+	color: #fff;
+	margin: 1px 1px;
+	display: inline-block;
+	border-radius: 2px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.pagination a.first {
+	
+}
+
+.pagination a.current,.pagination a:hover {
+	background: #03394E;
+}
