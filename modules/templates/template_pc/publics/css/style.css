@@ -1,0 +1,123 @@
+/*=====================header | footer========================*/
+#header {
+	
+}
+
+#header .logo {
+	background: #019dc6;
+	color: #fff;
+	font-size: 13px;
+	padding: 8px 6px;
+	text-align: center;
+}
+
+#header .menu1 {
+	background: #fff;
+	padding: 6px;
+	border-bottom: 1px solid #a8d9f6;
+}
+
+#header .menu2 {
+	background: #99CCFF;
+	padding: 6px;
+	color: white;
+	font-weight: bold;
+}
+
+#footer {
+	
+}
+
+#footer .copyright {
+	background: #019dc6;
+	color: #fff;
+	font-size: 13px;
+	padding: 8px 6px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*===================== menu ========================*/
+.title_menu {
+	background: #019dc6;
+	padding: 6px;
+	color: #fff;
+	border-left: 4px solid #019dc6;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.title_menu a {
+	color: #FFF;
+}
+
+.submenu {
+	background: #fff;
+	padding: 6px;
+	border-bottom: 1px solid #a8d9f6;
+}
+
+.list {
+	position: relative;
+	border-bottom: 1px solid #e2e2e2;
+	padding: 7px;
+	background-color: #fcfcfc;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+/*================== PHÂN TRANG=======================*/
+.pagination {
+	padding: 2px 3px;
+	background: #fff;
+	text-align: center;
+}
+
+.pagination a {
+	padding: 4px 8px;
+	background: #08A8E8;
+	color: #fff;
+	margin: 1px 1px;
+	display: inline-block;
+	border-radius: 2px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.pagination a.first {
+	
+}
+
+.pagination a.current,.pagination a:hover {
+	background: #03394E;
+}
+
+.sidebar {
+width: 295px;
+float: right;
+}
+.container{width:1000px;margin:0 auto}
+.vvip{padding:10px 0 7px 10px;border-bottom:1px solid #F3F3F3;transition:all 0.3s;-moz-transition:all 0.3s;-webkit-transition:all 0.3s;-o-transition:all 0.3s}
+.vvip:hover{padding-left:14px;box-shadow:rgb(8,168,232) 4px 0 0 inset}
+.vvip a{color:#444}
+.main{float:left;width:690px}
+.clear{clear:both}
+.labelpost{border-bottom:1px dashed #D1D8DF;font-size:13px;margin:0 0 0 0;padding:8px 5px;line-height:1.5}
+.labelpost img{float:left;padding:1px;margin-right:5px}
+
+#header{background:#2c96cf;height:50px;top:0;left:0;width:100%;font-size:13px;z-index:99}
+#header #logo{float:left;margin-right:10px}
+#header #logo a{background-position:0 -397px;color:#fff;display:block;font-weight:bold;height:31px;line-height:50px;width:128px}
+#header ul#menu{float:left;margin:0;padding:0}
+#header ul#menu li{height: 54px;float:left;list-style:none;position:relative;border-right: 1px solid rgba(63, 184, 227, 0.56);
+transition: all 0.5s ease 0s;
+-moz-transition: all 0.5s ease 0s;}
+#header ul#menu li:hover,#header ul#menu li.active{background:#36a7e3;color:#eee}
+#header ul#menu li a{font-size:13px;color:#fff;display:block;padding:0 13px;height:50px;line-height:50px;transition:color 0.15s,background-color 0.1s,border-color 0s linear 0s;-moz-transition:color 0.15s,background-color 0.1s,border-color 0s linear 0s;-webkit-transition:color 0.15s,background-color 0.1s,border-color 0s linear 0s}
+#header ul#menu li a:hover,#header ul#menu li a.active{color:#eee}
+.body-wrapper{margin-top:58px}
+.body-wrapper .box-shadow{box-shadow:0 0 8px 0 #ddd}
+.body-wrapper .radius{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
