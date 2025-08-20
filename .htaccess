@@ -1,0 +1,26 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9-_]+).html$ index.php?controller=blog&action=viewBlog&param=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/trang-([0-9]+).html$ index.php?controller=blog&action=viewBlog&param=$1&param2=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/c([0-9]+).html$ index.php?controller=blog&action=viewBlog&param=$1&param2=c$2 [L,QSA]
+RewriteRule ^category/([a-zA-Z0-9-_]+)/?$ ?controller=category&action=page&param=$1 [L,QSA]
+RewriteRule ^category/([a-zA-Z0-9-_]+)/([-0-9]+)/?$ ?controller=category&action=page&param=$1&param2=$2 [L,QSA]
+RewriteRule ^page/([-0-9]+)$ ?controller=blog&action=page&param=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?controller=$1&action=$2&param=$3 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?controller=$1&action=$2&param=$3&param2=$4 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?controller=$1&action=$2&param=$3&param=$4 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/?$ index.php?controller=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/?$ index.php?controller=$1&action=$2 [L,QSA]
+RewriteRule ^user/login/?$ index.php?controller=auth&action=login [L,QSA]
+RewriteRule ^blog/xem-nhieu.html$ ?controller=blog&action=order&param=view [L,QSA]
+RewriteRule ^blog/xem-nhieu_trang-([-0-9]+).html$ ?controller=blog&action=order&param=view&param2=$1 [L,QSA]
+RewriteRule ^blog/top-like.html$ ?controller=blog&action=order&param=likes [L,QSA]
+RewriteRule ^blog/top-like_trang-([-0-9]+).html$ ?controller=blog&action=order&param=likes&param2=$1 [L,QSA]
+RewriteRule ^blog/moi.html$ ?controller=blog&action=order&param=new [L,QSA]
+RewriteRule ^blog/moi_trang-([-0-9]+).html$ ?controller=blog&action=order&param=new&param2=$1 [L,QSA]
+RewriteRule ^blog/hot/([0-9-]+).html$ index.php?controller=blog&action=hot&param=$1 [L,QSA]
+RewriteRule ^tags/(.*?).html$ index.php?controller=search&action=tag&param=$1 [L,QSA]
+RewriteRule ^tags/(.*?)/trang-([0-9]+).html$ index.php?controller=search&action=tag&param=$1&param2=$2 [L,QSA]
+RewriteRule ^sitemap.xml$ index.php?controller=sitemap [L,QSA]
+ErrorDocument 404 /modules/views/404.php
